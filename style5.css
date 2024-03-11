@@ -29,8 +29,30 @@
     flex-direction: column;
     padding: 2rem;
     transition: scale,2s,ease,1s;
+    animation: rotatecontain 4s linear  2s infinite;
+
+   
     
 
+}
+@keyframes rotatecontain {
+    0%{
+        transform: rotateZ(0deg);
+        
+    }
+    25%{
+        transform: rotateZ(90deg);
+    }
+    50%{
+        transform: rotateZ(180deg);
+    }
+    75%{
+        transform: rotateZ(270deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+    
 }
 #container:hover{
     transform: scale(1.1);
